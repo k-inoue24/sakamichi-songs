@@ -341,12 +341,6 @@
                     this.songSelected2nd = '';
                     this.songComment = '';
                 }
-                var result = this.songList.filter(function(value, index, array) {
-                    return array.indexOf(value) !== array.lastIndexOf(value);
-                });
-                if (result.length) {
-                    alert('同じ曲が選択されています');
-                }
             },
 
             newSongs: function() {
@@ -386,8 +380,6 @@
             this.songList = JSON.parse(localStorage.getItem('songList')) || [];
         },
     });
-
-
     Vue.use(VueScrollTo, {
         container: "body",
         duration: 800,
