@@ -93,6 +93,7 @@ header h1 {
     font-size: 14px;
     letter-spacing: 1px;
     width: 127px;
+    line-height: 1.8;
     background: #fff;
     display: inline-block;
     cursor: pointer;
@@ -117,7 +118,7 @@ header h1 {
     background: #5BBEE4;
 }
 
-.tabs-content {
+.tabsContent {
     position: relative;
     border-radius: 2px;
     width: 370px;
@@ -126,8 +127,8 @@ header h1 {
     box-shadow: 1px 1px 5px #666;
 }
 
-.tabs-content:before,
-.tabs-content:after {
+.tabsContent:before,
+.tabsContent:after {
     display: block;
     content: "";
     position: absolute;
@@ -136,75 +137,51 @@ header h1 {
     border: 20px solid transparent;
 }
 
-.tabs-content1:before {
+.tabsContent1:before {
     bottom: 100%;
     border-bottom-color: rgba(187, 91, 204, 0.5);
 }
 
-.tabs-content1:after {
+.tabsContent1:after {
     top: 100%;
     border-top-color: rgba(187, 91, 204, 0.5);
 }
 
-.tabs-content2:before {
+.tabsContent2:before {
     bottom: 100%;
     border-bottom-color: rgba(96, 189, 86, 0.5);
 }
 
-.tabs-content2:after {
+.tabsContent2:after {
     top: 100%;
     border-top-color: rgba(96, 189, 86, 0.5);
 }
 
-.tabs-content3:before {
+.tabsContent3:before {
     bottom: 100%;
     border-bottom-color: rgba(91, 190, 228, 0.5);
 }
 
-.tabs-content3:after {
+.tabsContent3:after {
     top: 100%;
     border-top-color: rgba(91, 190, 228, 0.5);
 }
 
-.tabs-content1 {
+.tabsContent1 {
     background: rgba(187, 91, 204, 0.5);
 }
 
-.tabs-content2 {
+.tabsContent2 {
     background: rgba(96, 189, 86, 0.5);
 }
 
-.tabs-content3 {
+.tabsContent3 {
     background: rgba(91, 190, 228, 0.5);
 }
 
-.tabs-content select {
+.tabsContent select {
     border-color: transparent;
     cursor: pointer;
-}
-
-.tabs-content1 select {
-    background: -moz-linear-gradient(top, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
-    background: -webkit-linear-gradient(top, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
-    background: linear-gradient(to bottom, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
-    box-shadow: 2px 2px 2px rgb(154, 74, 168);
-}
-
-.tabs-content2 select {
-    background: -moz-linear-gradient(top, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
-    background: -webkit-linear-gradient(top, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
-    background: linear-gradient(to bottom, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
-    box-shadow: 2px 2px 2px rgb(79, 156, 70);
-}
-
-.tabs-content3 select {
-    background: -moz-linear-gradient(top, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
-    background: -webkit-linear-gradient(top, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
-    background: linear-gradient(to bottom, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
-    box-shadow: 2px 2px 2px rgb(76, 157, 189);
-}
-
-select {
     color: #fff;
     position: absolute!important;
     top: 50%!important;
@@ -216,7 +193,29 @@ select {
     outline: none;
 }
 
-option {
+.tabsContent1 select {
+    background: -moz-linear-gradient(top, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
+    background: -webkit-linear-gradient(top, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
+    background: linear-gradient(to bottom, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
+    box-shadow: 2px 2px 2px rgb(154, 74, 168);
+}
+
+.tabsContent2 select {
+    background: -moz-linear-gradient(top, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
+    background: -webkit-linear-gradient(top, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
+    background: linear-gradient(to bottom, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
+    box-shadow: 2px 2px 2px rgb(79, 156, 70);
+}
+
+.tabsContent3 select {
+    background: -moz-linear-gradient(top, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
+    background: -webkit-linear-gradient(top, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
+    background: linear-gradient(to bottom, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
+    box-shadow: 2px 2px 2px rgb(76, 157, 189);
+}
+
+.tabsContent option {
+    color: #333;
     height: 40px;
     padding: 4px;
 }
@@ -243,7 +242,7 @@ option {
     padding: 0 8px;
 }
 
-.comment {
+.addComment .comment {
     width: 318px;
     height: 20px;
     border-radius: 5px;
@@ -254,11 +253,11 @@ option {
 
 /* favoriteList */
 
-ul {
+.favoriteList ul {
     padding: 0;
 }
 
-li {
+.favoriteList li {
     list-style: none;
     line-height: 1.8;
 }
@@ -291,11 +290,11 @@ li {
     font-weight: bold;
 }
 
-.song_list {
+.favoriteList .songList {
     font-weight: bold;
 }
 
-.list_comment {
+.favoriteList .listComment {
     font-size: 14px;
     text-align: center;
     display: block;
@@ -303,14 +302,14 @@ li {
     font-weight: normal;
 }
 
-.list_border {
+.favoriteList .list_border {
     display: block;
     width: 400px;
     border-bottom: 1px solid #ccc;
     margin: 15px auto 0;
 }
 
-.delete_btn {
+.favoriteList .delete_btn {
     background: #fff;
     color: rgb(219, 146, 9);
     border-color: #fff;
@@ -318,11 +317,11 @@ li {
     box-shadow: 0px 4px 1px rgb(223, 205, 173);
 }
 
-.delete_btn:hover {
+.favoriteList .delete_btn:hover {
     box-shadow: 0px 1px 1px rgb(223, 205, 173);
 }
 
-.new_add_btn {
+.favoriteList .new_add_btn {
     margin: 16px auto 40px;
 }
 
@@ -347,6 +346,10 @@ footer p {
 /* responsive */
 
 @media screen and (max-width: 480px) {
+    .btn {
+        width: 194px;
+        padding: 12px 0;
+    }
     header {
         margin-bottom: 30px;
     }
@@ -366,24 +369,20 @@ footer p {
         font-size: 13px;
         margin-bottom: 56px;
     }
-    .tabs-content {
+    .tabsContent {
         width: 82%;
         height: 120px;
         margin-bottom: 54px;
     }
-    select {
+    .tabsContent select {
         width: 93%;
         height: 40px;
-    }
-    .btn {
-        width: 194px;
-        padding: 12px 0;
     }
     .addCommentTitle {
         width: 92%;
         padding: 0 10px;
     }
-    input.comment {
+    .addComment .comment {
         width: 92%;
     }
     .favoriteList ul {
@@ -392,10 +391,10 @@ footer p {
     .favoriteList li {
         font-size: 14px;
     }
-    .list_comment {
+    .favoriteList .listComment {
         font-size: 13px;
     }
-    .list_border {
+    .favoriteList .listBorder {
         width: 90%;
     }
     footer p {
@@ -404,7 +403,7 @@ footer p {
 }
 
 @media screen and (max-width: 380px) {
-    .tabs-content {
+    .tabsContent {
         width: 95%;
     }
     .addCommentTitle {
@@ -412,7 +411,7 @@ footer p {
         letter-spacing: 0;
         padding: 0 2px;
     }
-    input.comment {
+    .addComment .comment {
         padding: 10px 2px;
     }
 }
