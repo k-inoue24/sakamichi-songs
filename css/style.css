@@ -1,0 +1,418 @@
+/* common settings */
+
+body {
+    background: #f7f4ed;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    color: #444;
+    padding-bottom: 60px;
+}
+
+h2 {
+    width: 400px;
+    background: rgb(58, 58, 235);
+    background: #4e4d4b;
+    background: #7c715f;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border-radius: 4px;
+    box-shadow: 0 3px 2px #bbb;
+    padding: 13px 0;
+    margin: 0 auto 40px;
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    width: 220px;
+    color: #fff;
+    font-size: 13px;
+    background: -moz-linear-gradient(top, rgb(219, 146, 9) 50%, rgb(245, 163, 11));
+    background: -webkit-linear-gradient(top, rgb(219, 146, 9) 50%, rgb(245, 163, 11));
+    background: linear-gradient(to bottom, rgb(240, 159, 8) 60%, rgb(255, 208, 122));
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    border-color: rgb(219, 146, 9);
+    cursor: pointer;
+    box-shadow: 0px 4px 1px rgb(216, 143, 7);
+    margin: 30px auto 50px;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    box-shadow: 0px 1px 1px rgb(216, 143, 7);
+    position: relative;
+    transform: translateY(3px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1.0s;
+}
+
+.fade-enter,
+.fade-leave {
+    opacity: 0;
+}
+
+
+/* header */
+
+header {
+    margin-bottom: 50px;
+}
+
+header img {
+    width: 460px;
+}
+
+header h1 {
+    border-top: 13px double #fff;
+    border-bottom: 13px double #fff;
+    margin-bottom: 30px;
+}
+
+
+/* singleChoice */
+
+.tabs ul {
+    display: flex;
+}
+
+.tabs li {
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 127px;
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 7px 0;
+    margin-bottom: 70px;
+    box-shadow: 0px 3px 4px #bbb;
+}
+
+.tabs li.active1 {
+    color: #fff;
+    background: rgb(198, 100, 216);
+}
+
+.tabs li.active2 {
+    color: #fff;
+    background: #5EB954;
+}
+
+.tabs li.active3 {
+    color: #fff;
+    background: #5BBEE4;
+}
+
+.tabs-content {
+    position: relative;
+    border-radius: 2px;
+    width: 370px;
+    height: 120px;
+    margin: 0 auto 80px;
+    box-shadow: 1px 1px 5px #666;
+}
+
+.tabs-content:before,
+.tabs-content:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 20px solid transparent;
+}
+
+.tabs-content1:before {
+    bottom: 100%;
+    border-bottom-color: rgba(187, 91, 204, 0.5);
+}
+
+.tabs-content1:after {
+    top: 100%;
+    border-top-color: rgba(187, 91, 204, 0.5);
+}
+
+.tabs-content2:before {
+    bottom: 100%;
+    border-bottom-color: rgba(96, 189, 86, 0.5);
+}
+
+.tabs-content2:after {
+    top: 100%;
+    border-top-color: rgba(96, 189, 86, 0.5);
+}
+
+.tabs-content3:before {
+    bottom: 100%;
+    border-bottom-color: rgba(91, 190, 228, 0.5);
+}
+
+.tabs-content3:after {
+    top: 100%;
+    border-top-color: rgba(91, 190, 228, 0.5);
+}
+
+.tabs-content1 {
+    background: rgba(187, 91, 204, 0.5);
+}
+
+.tabs-content2 {
+    background: rgba(96, 189, 86, 0.5);
+}
+
+.tabs-content3 {
+    background: rgba(91, 190, 228, 0.5);
+}
+
+.tabs-content select {
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.tabs-content1 select {
+    background: -moz-linear-gradient(top, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
+    background: -webkit-linear-gradient(top, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
+    background: linear-gradient(to bottom, rgb(204, 99, 223) 86%, rgb(226, 138, 241));
+    box-shadow: 2px 2px 2px rgb(154, 74, 168);
+}
+
+.tabs-content2 select {
+    background: -moz-linear-gradient(top, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
+    background: -webkit-linear-gradient(top, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
+    background: linear-gradient(to bottom, rgb(96, 189, 86) 86%, rgb(128, 218, 118));
+    box-shadow: 2px 2px 2px rgb(79, 156, 70);
+}
+
+.tabs-content3 select {
+    background: -moz-linear-gradient(top, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
+    background: -webkit-linear-gradient(top, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
+    background: linear-gradient(to bottom, rgb(91, 190, 228) 86%, rgb(126, 215, 250));
+    box-shadow: 2px 2px 2px rgb(76, 157, 189);
+}
+
+select {
+    color: #fff;
+    position: absolute!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    width: 340px;
+    height: 44px;
+    outline: none;
+}
+
+option {
+    height: 40px;
+    padding: 4px;
+}
+
+
+/* addComment */
+
+.addComment p {
+    margin-bottom: 14px;
+}
+
+.addCommentTitle {
+    width: 340px;
+    height: 44px;
+    font-size: 13px;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.addComment i {
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+.comment {
+    width: 318px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+
+/* favoriteList */
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 1.8;
+}
+
+.favoriteList h2 {
+    margin-bottom: 50px;
+}
+
+.favoriteList ul {
+    width: 440px;
+    margin: 0 auto;
+}
+
+.favoriteList li {
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.favoriteList li input {
+    font-size: 38px;
+}
+
+.favoriteList i {
+    color: #888;
+    font-weight: bold;
+}
+
+.song_list {
+    font-weight: bold;
+}
+
+.list_comment {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    color: #666;
+    font-weight: normal;
+}
+
+.list_border {
+    display: block;
+    width: 400px;
+    border-bottom: 1px solid #ccc;
+    margin: 15px auto 0;
+}
+
+.delete_btn {
+    background: #fff;
+    color: rgb(219, 146, 9);
+    border-color: #fff;
+    margin: 50px auto 16px;
+    box-shadow: 0px 4px 1px rgb(223, 205, 173);
+}
+
+.delete_btn:hover {
+    box-shadow: 0px 1px 1px rgb(223, 205, 173);
+}
+
+.new_add_btn {
+    margin: 16px auto 40px;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 480px) {
+    header {
+        margin-bottom: 30px;
+    }
+    header img {
+        width: 100%;
+    }
+    h2 {
+        width: 99%;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .tabs ul {
+        width: 100%;
+    }
+    .tabs li {
+        width: 32%;
+        font-size: 13px;
+        margin-bottom: 56px;
+    }
+    .tabs-content {
+        width: 82%;
+        height: 120px;
+        margin-bottom: 54px;
+    }
+    select {
+        width: 93%;
+        height: 40px;
+    }
+    .btn {
+        width: 194px;
+        padding: 12px 0;
+    }
+    .addCommentTitle {
+        width: 92%;
+        padding: 0 10px;
+    }
+    input.comment {
+        width: 92%;
+    }
+    .favoriteList ul {
+        width: 98%;
+    }
+    .favoriteList li {
+        font-size: 14px;
+    }
+    .list_comment {
+        font-size: 13px;
+    }
+    .list_border {
+        width: 90%;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .tabs-content {
+        width: 95%;
+    }
+    .addCommentTitle {
+        font-size: 12px;
+        letter-spacing: 0;
+        padding: 0 2px;
+    }
+    input.comment {
+        padding: 10px 2px;
+    }
+}
