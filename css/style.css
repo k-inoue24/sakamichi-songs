@@ -309,7 +309,7 @@ header h1 {
     margin: 15px auto 0;
 }
 
-.favoriteList .delete_btn {
+.favoriteList .deleteBtn {
     background: #fff;
     color: rgb(219, 146, 9);
     border-color: #fff;
@@ -317,11 +317,11 @@ header h1 {
     box-shadow: 0px 4px 1px rgb(223, 205, 173);
 }
 
-.favoriteList .delete_btn:hover {
+.favoriteList .deleteBtn:hover {
     box-shadow: 0px 1px 1px rgb(223, 205, 173);
 }
 
-.favoriteList .new_add_btn {
+.favoriteList .newAddBtn {
     margin: 16px auto 40px;
 }
 
