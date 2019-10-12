@@ -302,7 +302,7 @@ header h1 {
     font-weight: normal;
 }
 
-.favoriteList .list_border {
+.favoriteList .listBorder {
     display: block;
     width: 400px;
     border-bottom: 1px solid #ccc;
