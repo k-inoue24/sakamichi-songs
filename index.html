@@ -16,7 +16,7 @@
 <body>
     <div id="app">
         <header id="header">
-            <h1><img src="img/MY SAKAMICHI Diem Spa.png" alt=""></h1>
+            <h1><img src="img/headerImg.png" alt=""></h1>
         </header>
         <div class="singleChoice" id="singleChoice">
             <h2>シングル曲を選択</h2>
@@ -26,7 +26,7 @@
                 <li v-on:click="tabChange('3')" v-bind:class="{'active active3': isActive === '3'}">日向坂46</li>
             </ul>
             <transition name="fade">
-                <div class="tabs-content tabs-content1" v-if="isActive === '1'">
+                <div class="tabsContent tabsContent1" v-if="isActive === '1'">
                     <select v-model="songSelected">
                     <option value="">　▼ 乃木坂46 1st~24th</option>
                     <option v-for="(nogizakasong,index) in nogizakaSongs" v-bind.key="nogizakasong.id">
@@ -36,7 +36,7 @@
                 </div>
             </transition>
             <transition name="fade">
-                <div class="tabs-content tabs-content2" v-if="isActive === '2'">
+                <div class="tabsContent tabsContent2" v-if="isActive === '2'">
                     <select v-model="songSelected">
                         
                     <option value="">　▼ 欅坂46 1st~8th</option>
@@ -47,7 +47,7 @@
                 </div>
             </transition>
             <transition name="fade">
-                <div class="tabs-content tabs-content3" v-if="isActive === '3'">
+                <div class="tabsContent tabsContent3" v-if="isActive === '3'">
                     <select v-model="songSelected">
                         <option value="">　▼ 日向坂 1st~3th</option>
                         <option v-for="(hinatazakasong,index) in hinatazakaSongs" v-bind.key="hinatazakasong.id">
@@ -74,8 +74,8 @@
                 <h2>お気に入りリスト</h2>
                 <ul>
                     <li v-for="list of songList ">
-                        <input type="checkbox" v-model="list.favorite " class="song_list"> {{list.title}}　 <span class="list_comment"><i class=" far fa-comment "></i> {{list.comment}}</span>
-                        <span class="list_border "></span>
+                        <input type="checkbox" v-model="list.favorite " class="songList"> {{list.title}}　 <span class="listComment"><i class=" far fa-comment "></i> {{list.comment}}</span>
+                        <span class="listBorder"></span>
                     </li>
                 </ul>
                 <a class="btn delete_btn " v-on:click="songDelete ">選択した曲をリストから削除</a>
