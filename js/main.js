@@ -65,7 +65,7 @@
                     id: 8,
                     group: '乃木坂46',
                     number: '8th',
-                    title: '気づいたら片思い',
+                    title: '気づいたら片想い',
                     release: '2014.4.2',
                     favorite: false,
                 },
