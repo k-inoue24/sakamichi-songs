@@ -197,6 +197,14 @@
                     release: '2019.9.4',
                     favorite: false,
                 },
+                {
+                    id: 36,
+                    group: '乃木坂46',
+                    number: '25th',
+                    title: 'しあわせの保護色',
+                    release: '2020.3.25',
+                    favorite: false,
+                },
 
             ],
             keyakizakaSongs: [{
@@ -288,8 +296,14 @@
                     release: '2019.10.2',
                     favorite: false,
                 },
-
-
+                {
+                    id: 37,
+                    group: '日向坂46',
+                    number: '4th',
+                    title: 'ソンナコトナイヨ',
+                    release: '2020.2.19',
+                    favorite: false,
+                },
             ],
 
             isActive: '1',
