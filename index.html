@@ -28,31 +28,31 @@
             <transition name="fade">
                 <div class="tabsContent tabsContent1" v-if="isActive === '1'">
                     <select v-model="songSelected">
-                    <option value="">　▼ 乃木坂46 1st~24th</option>
+                    <option value="">　▼ 乃木坂46 1st~25th</option>
                     <option v-for="(nogizakasong,index) in nogizakaSongs" v-bind.key="nogizakasong.id">
                         {{nogizakasong.group}} {{nogizakasong.number}}：{{ nogizakasongtitle = nogizakasong.title}}
-                    </option>     
+                    </option>
                 </select>
                 </div>
             </transition>
             <transition name="fade">
                 <div class="tabsContent tabsContent2" v-if="isActive === '2'">
                     <select v-model="songSelected">
-                        
+
                     <option value="">　▼ 欅坂46 1st~8th</option>
                     <option v-for="(keyakizakasong,index) in keyakizakaSongs" v-bind.key="keyakizakasong.id">
                         {{keyakizakasong.group}} {{keyakizakasong.number}}：{{keyakizakasong.title}}
-                    </option>     
+                    </option>
                 </select>
                 </div>
             </transition>
             <transition name="fade">
                 <div class="tabsContent tabsContent3" v-if="isActive === '3'">
                     <select v-model="songSelected">
-                        <option value="">　▼ 日向坂 1st~3rd</option>
+                        <option value="">　▼ 日向坂 1st~4th</option>
                         <option v-for="(hinatazakasong,index) in hinatazakaSongs" v-bind.key="hinatazakasong.id">
                             {{hinatazakasong.group}} {{hinatazakasong.number}}：{{hinatazakasong.title}}
-                        </option>          
+                        </option>
                     </select>
                 </div>
             </transition>
